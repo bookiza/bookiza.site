@@ -20,7 +20,7 @@
         window.heap.appid = e, window.heap.config = t = t || {};
         var r = t.forceSSL || "https:" === document.location.protocol,
             a = document.createElement("script");
-        a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+        a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "https:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
         var n = document.getElementsByTagName("script")[0];
         n.parentNode.insertBefore(a, n);
         for (var o = function(e) {
@@ -35,7 +35,7 @@
 
 <body>
     <header>
-        <a href="http://bookiza.io">
+        <a href="https://bookiza.io">
             <img src="./images/bookiza.png" alt="bookiza logo" class="headerPic" />
             <img src="./images/logo.png" alt="bookiza small logo" class="navPic" />
         </a>
@@ -70,11 +70,11 @@
             <table>
                 <tr>
                     <td>
-                        <a href="https://twitter.com/intent/tweet?screen_name=bookiza&text=%20-%20The%20awesome%20book%20reification%20framework%20in%20node:&button_hashtag=TwitterStories&hashtags=superbooks" class="twitter-share-button" data-url="http://bookiza.io" data-related="bookiza">Tweet like no one's watching!</a>
+                        <a href="https://twitter.com/intent/tweet?screen_name=bookiza&text=%20-%20The%20awesome%20book%20reification%20framework%20in%20node:&button_hashtag=TwitterStories&hashtags=superbooks" class="twitter-share-button" data-url="https://bookiza.io" data-related="bookiza">Tweet like no one's watching!</a>
                         <script>
                         ! function(d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                                p = /^https:/.test(d.location) ? 'http' : 'https';
                             if (!d.getElementById(id)) {
                                 js = d.createElement(s);
                                 js.id = id;
@@ -116,7 +116,7 @@
                 <div class="terminal">
                     <p>$ bookiza server</p>
                 </div>
-                <p class="justify"> It will &#128293; up your manuscript at <span class="monospace"> http://localhost:4567 </span> and watch for changes! </p>
+                <p class="justify"> It will &#128293; up your manuscript at <span class="monospace"> https://localhost:4567 </span> and watch for changes! </p>
                 <hr/>
                 <p class="justify"> Open project on your favorite editor (Sublime / Atom), write away. Once the book is ready, hit: </p>
                 <div class="terminal">
