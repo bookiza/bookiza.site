@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Crimson+Text|Great+Vibes);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Crimson+Text);
 * {
   box-sizing: border-box;
 }
@@ -38,7 +38,7 @@ html {
 
 body {
   color: rgba(0, 0, 0, 0.75);
-  background: ivory;
+  /*background: ivory; */
   margin: 0;
   font-family: "Crimson Text", serif;
   font-smooth: always;
@@ -198,9 +198,9 @@ input:-webkit-autofill {
 /* ----- Header CSS -----------*/
 
 header {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+/*  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
   background-color: #4900ed;
-  animation: rgb 60s infinite alternate;
+  animation: rgb 60s infinite alternate; */
   z-index: 100000;
   position: fixed;
   top: 0;
@@ -225,7 +225,7 @@ header .navPic {
   display: none;
   text-align: center;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  background-color: #0ac;
+  background-color: #0af;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   transform: scale(0);
@@ -252,7 +252,7 @@ header .navPic {
   height: 81px;
   border-radius: 50%;
   width: 81px;
-  border: #F1F1E4 solid 3px;
+  border: #ebc612 solid 5px;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   transition: 0.4s;
@@ -303,10 +303,10 @@ header .navPic {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  border-color: #ffc;
+  border-color: #fff;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-bottom: 45px solid #ffc;
+  border-bottom: 45px solid #900909;
   box-shadow: 0px 6px 5px -5px rgba(0, 0, 0, 0.5);
   z-index: 999999;
   height: 60px;
@@ -325,7 +325,7 @@ header .navPic {
   position: absolute;
   left: -28px;
   top: 17px;
-  border-bottom: 1px dotted rgba(55, 55, 55, 0.7);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.7);
   width: inherit;
   text-align: center;
   height: 40px;
@@ -335,7 +335,6 @@ header .navPic {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
-  color: #777;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -343,14 +342,14 @@ header .navPic {
   line-height: 22px;
   margin: 0 0 0 -45px;
   display: inline-block;
-  border-top: 1px dotted rgba(55, 55, 55, 0.7);
+  border-top: 1px dotted rgba(255, 255, 255, 0.7);
   transition: color 500ms ease;
-  color: #444;
+  color: #fff;
 
 }
 
-.ribbon-wrap .trap-ribbon a:hover {
-    color: #EE0602;
+.ribbon-wrap > .trap-ribbon a:hover {
+    color: #fc0;
 }
 
 
@@ -414,17 +413,17 @@ h1.pitch {
   box-shadow: -5px 5px 0 #39393B;
 }
 
-.red {
-  background: #DC3535;
+.purple {
+  background: #9309cc;
 }
 
-.light-blue {
-  background: #3ca5f5;
+.crimson {
+  background: #da0e76;
 }
 
 
-.light-gray {
-  background: #777;
+.blue {
+  background: #2c63de;
 }
 
 .supportIt {
@@ -441,7 +440,7 @@ h1.pitch {
 }
 
 .supportIt:hover {
-  box-shadow: -2px 2px 0 #f9f9bB;
+  box-shadow: -2px 2px 2px #f9f9bB;
 }
 
 .slack-gray{
@@ -698,10 +697,6 @@ ul.horizontal-list li {
 
 .montserrat {
   font-family: 'Montserrat', sans-serif;
-}
-
-.great-vibes {
-  font-family: 'Great Vibes', cursive;
 }
 
 .monospace {
@@ -1019,4 +1014,32 @@ td, th {
 .fb_iframe_widget {
   display:block !important;
   margin: -7px 20px 0;
+}
+
+
+.color-strip {
+  border-bottom: 1px solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-image: linear-gradient(
+      to right,
+      #fed330 0%,
+      #fe8f30 20%,
+      #e63841 20%,
+      #e63841 20%,
+      #f3339d 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #826eec 40%,
+      #64d3f7 60%,
+      #46b13d 60%,
+      #1172c0 80%,
+      #328a2b 80%,
+      #ec54c2 80%,
+      #af38f7 100%
+    )
+    1 stretch repeat;
 }
