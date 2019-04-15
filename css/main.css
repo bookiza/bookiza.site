@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Crimson+Text);
+@import url(https://fonts.googleapis.com/css?family=Gochi+Hand|Crimson+Text);
 * {
   box-sizing: border-box;
 }
@@ -198,9 +198,9 @@ input:-webkit-autofill {
 /* ----- Header CSS -----------*/
 
 header {
-/*  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
   background-color: #4900ed;
-  animation: rgb 60s infinite alternate; */
+  animation: rgb 60s infinite alternate;  */
   z-index: 100000;
   position: fixed;
   top: 0;
@@ -396,34 +396,57 @@ h1.pitch {
 
 /* ----- Buttons ------*/
 
-.tryIt {
-  width: 250px;
-  margin: 2vh auto;
-  display: inline-block;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding: 15px 30px;
-  transition: all 0.3s;
-  font-weight: 700;
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
 }
 
-.tryIt:hover {
-  box-shadow: -5px 5px 0 #39393B;
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 10px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
 }
 
-.purple {
-  background: #9309cc;
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
 }
 
-.crimson {
-  background: #da0e76;
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
 }
 
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
 
-.blue {
-  background: #2c63de;
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
 }
 
 .supportIt {
